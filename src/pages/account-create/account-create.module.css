@@ -67,10 +67,10 @@
 }
 
 .link {
-color: var(--fds-blue);
-composes: baseGlowText from "../../styles.module.css";
-text-decoration: underline;
-cursor: pointer;
+  color: var(--fds-orange);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 90%;
 }
 
 .username {
@@ -127,20 +127,24 @@ cursor: pointer;
 }
 
 .button {
-  composes: bodyButton from "../../styles.module.css";
-  composes: baseShadow from "../../styles.module.css";
-  width: 75vw;
+  composes: bodyBold from "../../styles.module.css";
+  composes: baseGlow from "../../styles.module.css";
   min-width: 200px;
-  max-width: 300px;
+  max-width: 280px;
   text-align: center;
   box-sizing: border-box;
-  padding: 30px 42px;
-  border-radius: 2px;
+  padding: 20px 42px;
+  border-radius: 4px;
   cursor: pointer;
-  max-height: 82px;
-  background-color: rgba(255, 255, 255, 0.2);
+  max-height: 62px;
   margin-top: 20px;
+  border: 1px solid var(--fds-orange);
+  margin-top: 40px;
 }
+.button:hover{
+  background-color: --fds-yellow !important;
+}
+
 
 .buttontext {
   color: white;
@@ -178,7 +182,7 @@ cursor: pointer;
   padding: 6px;
   width: 30px;
   height: 30px;
-  background-color: var(--fds-blue);
+  background-color: var(--fds-orange);
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.5);
@@ -223,12 +227,26 @@ cursor: pointer;
   padding-bottom: 5px;
   margin-right: 10px;
   border: 0px;
-  border-bottom: 1px solid var(--fds-blue);
+  border-bottom: 1px solid var(--fds-orange);
   background-color: transparent;
 }
 
 .usernameinput:not(:placeholder-shown) {
-  border-bottom: 1px solid var(--fds-blue);
+  border-bottom: 1px solid var(--fds-orange);
+}
+
+.getLoginUsernameInput{
+  composes: bodyBold from "../../styles.module.css";
+  width: 55vw;
+  max-width: 260px;
+  color: var(--text-light);
+  text-align: left;
+  outline: none;
+  padding-bottom: 5px;
+  margin-right: 10px;
+  border: 0px;
+  border-bottom: 1px solid var(--fds-orange);
+  background-color: transparent;
 }
 
 .mnemonicinputbox {
@@ -251,12 +269,12 @@ cursor: pointer;
   padding-bottom: 5px;
   margin-right: 10px;
   border: 0px;
-  border-bottom: 1px solid var(--fds-blue);
+  border-bottom: 1px solid var(--fds-orange);
   background-color: transparent;
 }
 
 .mnemonicinput:not(:placeholder-shown) {
-  border-bottom: 1px solid var(--fds-blue);
+  border-bottom: 1px solid var(--fds-orange);
 }
 
 .passwordflex {
@@ -292,6 +310,7 @@ cursor: pointer;
 }
 
 .statusbox {
+  font-family: "Work Sans";
   margin-top: 40px;
   display: grid;
   grid-template-columns: 20px auto;
@@ -303,7 +322,7 @@ cursor: pointer;
 }
 
 .statusboxitemactive {
-  color: var(--fds-blue);
+  color: var(--fds-orange);
 }
 
 .blacktext {
@@ -365,15 +384,15 @@ input[type="range"]::-webkit-slider-runnable-track {
   width: 168px;
   height: 2px;
   cursor: pointer;
-  background: var(--fds-blue);
+  background: var(--fds-orange);
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  border: 1px solid var(--fds-blue);
+  border: 1px solid var(--fds-orange);
   height: 18px;
   width: 18px;
   border-radius: 50%;
-  background: var(--fds-blue);
+  background: var(--fds-orange);
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -8px;
@@ -383,14 +402,14 @@ input[type="range"]::-moz-range-track {
   width: 168px;
   height: 2px;
   cursor: pointer;
-  background: var(--fds-blue);
+  background: var(--fds-orange);
 }
 input[type="range"]::-moz-range-thumb {
-  border: 1px solid var(--fds-blue);
+  border: 1px solid var(--fds-orange);
   height: 18px;
   width: 18px;
   border-radius: 50%;
-  background: var(--fds-blue);
+  background: var(--fds-orange);
   cursor: pointer;
   margin-top: -8px;
 }

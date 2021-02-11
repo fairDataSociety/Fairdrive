@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,700");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --border-line: #222222;
-  --bg-dark: #222222;
+  --bg-dark: #242424;
   --bg-shade: #333333;
-  --text-light: #cecece;
+  --text-light: #ffffff;
   --text-title: #efd96f;
-  --text-shade: #ffa000;
+  --text-shade: #db7632;
   --fds-yellow: #efd96f;
-  --fds-blue: #92e7fa;
+  --fds-orange: #dd7700;
   --fds-dark: #333333;
-  --fds-red: #d13a3a;
+  --fds-red: #f63333;
 }
 
 body {
@@ -25,11 +26,9 @@ body {
 }
 
 .baseGlow {
-  box-shadow: 0px 0px 10px #26829b, #26829b 0px 0px 10px inset;
 }
 
 .baseGlowText {
-    text-shadow: 0px 0px 20px #26829b;
 }
 
 a {
@@ -37,50 +36,52 @@ a {
 }
 
 .mainTitle1 {
-  font-family: Montserrat, sans-serif;
-  font-weight: 800;
-  font-size: 28px;
+  font-family: 'Work Sans';
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 34px;
   letter-spacing: 0;
   line-height: 36px;
+  margin-bottom: 20px;
 }
 
 .mainTitle2 {
-  font-family: Montserrat, sans-serif;
-  font-weight: 800;
-  font-size: 28px;
+  font-family: 'Work Sans';
+  font-weight: 400;
+  font-size: 18px;
   letter-spacing: 0;
-  line-height: 36px;
+  line-height: 120%;
 }
 .mainTitle3 {
-  font-family: Montserrat, sans-serif;
-  font-weight: 800;
-  font-size: 26px;
+  font-family: 'Work Sans';
+  font-weight: 700;
+  font-size: 18px;
   letter-spacing: 0px;
   line-height: 32px;
 }
 .mainTitle4 {
-  font-family: Montserrat, sans-serif;
-  font-weight: 800;
-  font-size: 22px;
+  font-family: 'Work Sans';
+  font-weight: 400;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: 27px;
 }
 .bodyDefault {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Work Sans';
   font-weight: 300;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: 19px;
 }
 .bodyBold {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Work Sans';
   font-weight: 800;
   font-size: 16px;
   letter-spacing: 0;
   line-height: 19px;
 }
 .bodyDetail {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Work Sans';
   font-weight: 200;
   font-size: 20px;
   letter-spacing: 0;
@@ -88,7 +89,7 @@ a {
 }
 
 .smallLight {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Work Sans';
   font-weight: 300;
   font-size: 12px;
   letter-spacing: 0;
@@ -96,21 +97,21 @@ a {
 }
 
 .smallBold {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Work Sans';
   font-weight: 800;
   font-size: 12px;
   letter-spacing: 0;
   line-height: 15px;
 }
 .smallestLight {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Work Sans';
   font-weight: 300;
   font-size: 10px;
   letter-spacing: 0;
   line-height: 13px;
 }
 .smallestBold {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Work Sans';
   font-weight: 800;
   font-size: 10px;
   letter-spacing: 0;
@@ -127,11 +128,12 @@ a {
 
 .link {
   composes: bodyDefault;
-
-color: var(--fds-blue);
-composes: baseGlowText;
-text-decoration: underline;
-cursor: pointer;
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  text-align: center;
+  color: var(--fds-orange);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .container {
@@ -157,12 +159,17 @@ cursor: pointer;
 
 .loginregistertitle {
   composes: bodyBold;
-  color: #cecece !important;
+  color: #F4944D !important;
   line-height: 36px;
 }
 
 .title {
   composes: mainTitle1;
+  color: white;
+  text-align: center;
+}
+.subtitle {
+  composes: mainTitle2;
   color: white;
   text-align: center;
 }
@@ -189,7 +196,7 @@ cursor: pointer;
 
 .breadcrumbpath {
   composes: bodyBold;
-  color: #cecece !important;
+  color: #F4944D !important;
 }
 
 .exiticonblue {
@@ -248,7 +255,7 @@ cursor: pointer;
 }
 
 .createnew :hover {
-  color: var(--fds-blue) !important;
+  color: var(--fds-orange) !important;
 }
 
 .innercontainer input {
@@ -270,12 +277,11 @@ cursor: pointer;
 
 .innercontainer input:focus {
   outline: none;
-  border-bottom: 1px solid var(--fds-blue);
+  border-bottom: 1px solid var(--fds-orange);
 }
 
 .button {
   composes: bodyBold;
-  composes: baseGlow;
   min-width: 200px;
   max-width: 280px;
   text-align: center;
@@ -283,19 +289,19 @@ cursor: pointer;
   padding: 20px 42px;
   border-radius: 4px;
   cursor: pointer;
-  max-height: 62px;
-  margin-top: 20px;
-  border: 1px solid var(--fds-blue);
+  border: 1px solid var(--fds-orange);
   margin-top: 40px;
+}
+.button:active{
+  background-color: --fds-yellow;
 }
 
 .buttontext {
   composes: bodyBold;
-    composes: baseGlowText;
-    cursor: pointer;
-
-    text-transform: capitalize;
-    color: var(--fds-blue);
+  font-family: "IBM Plex Mono";
+  cursor: pointer;
+  text-transform: capitalize;
+  color: var(--fds-orange);
 }
 
 
@@ -398,12 +404,12 @@ cursor: pointer;
 
 .balance {
   composes: smallBold;
-  color: var(--fds-blue);
+  color: var(--fds-orange);
 }
 
 .bigbalance {
   composes: mainTitle2;
-  color: var(--fds-blue);
+  color: var(--fds-orange);
 }
 
 .flexer {
@@ -456,7 +462,7 @@ cursor: pointer;
   text-align: left;
   padding-bottom: 5px;
   border: 0px;
-  border-bottom: 1px solid var(--fds-blue);
+  border-bottom: 1px solid var(--fds-orange);
   background-color: transparent;
   color: var(--text-light);
   outline: none;
