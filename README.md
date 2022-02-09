@@ -1,3 +1,5 @@
+REPO IS NOT MAINTANED - ARCHIVING AS READ ONLY
+
 TOC:
 
 - [What is Fairdrive](#What-is-Fairdrive)
